@@ -2,7 +2,7 @@ from Cryptodome.Cipher import AES
 from Cryptodome.Random import get_random_bytes
 import smtplib
 
- #define our data
+#define our data
 data=b"Hari KRishnan"
 
 key = get_random_bytes(16)
