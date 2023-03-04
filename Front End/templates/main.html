@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Registration Form</title>
+    <link rel="stylesheet" href="/assets/style.css"/>
+</head>
+<body>
+    
+    <div class="hero">
+        <div class="header">
+            <h1> Secure File</h1>
+            <h1 id="safe">Storage</h1><br>
+        </div>
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="signin()">Signin</button>
+            </div> 
+            <form  id='login' class="input-group">
+                <pre> Login </pre>
+                <input type="text" class="input-field" placeholder="User Name" required>
+                <input type="password" class="input-field" placeholder="Password" required><br><br><br>
+                <button type="submit" class="submit-btn" id="login-btn">Login</button>
+            </form>
+            <form id="signin" class="input-group">
+                <pre> Create New Account</pre>
+                <input type="text" class="input-field" placeholder="First Name" required>
+                <input type="text" class="input-field" placeholder="Last Name" required>
+                <input type="email" class="input-field" placeholder="Email ID" required>
+                <input type="password" class="input-field" placeholder=" New Password" required>
+                <input type="password" class="input-field" placeholder=" Re Enter Password" required>
+                <button type="submit" class="submit-btn" onclick="login()">Create Account</button>
+            </form>
+        </div>
+
+        
+    </div>
+    <script>
+        var x=document.getElementById("login");
+        var y=document.getElementById("signin");
+        var z=document.getElementById("btn");
+        function signin(){
+            x.style.left='-400px';
+            y.style.left='50px';
+            z.style.left='110px';
+        }
+        function login(){
+            x.style.left='50px';
+            y.style.left='450px';
+            z.style.left='0px';
+
+        }
+        document.getElementById("login-btn").addEventListener("click", function(event) {
+        event.preventDefault(); // prevent the form from submitting
+        window.location.href = "choice.html";
+        } )
+    </script>
+</body>
+</html>

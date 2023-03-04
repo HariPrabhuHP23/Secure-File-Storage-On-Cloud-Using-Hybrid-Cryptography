@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decryption</title>
+    <link rel="stylesheet" href="/assets/decrypt.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1> File </h1>
+            <h1 id="safe">Download</h1><br>
+        </div>
+        <div class="file-download">
+            <form class="file-download">
+                <label for="received-file"> Select the file</label>
+                <select>
+                    <option value="option1">1.pdf</option>
+                    <option value="option2">2.img</option>
+                    <option value="option3">3.mp4</option>
+                </select><br><br>
+                <label for="file-upload">Select an Image to Hide </label>
+                <input type="file" id="file-upload" name="file-upload"><br><br>
+                <button type="submit" class="download">Download</button><br><br>
+                <button type="button" class="download" id="main">Back to Choice</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.getElementById('main').addEventListener('click',function (main) {
+            main.preventDefault();
+            window.location.href="choice.html";
+        })
+    </script>
+
+
+</body>
+
+</html>
