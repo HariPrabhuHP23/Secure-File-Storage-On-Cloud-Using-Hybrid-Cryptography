@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color:white;
+    align-items: center;
+}
+#safe{
+    color: rgb(97, 238, 92);
+}
+.header{
+    color:black;
+    width: 300px;
+    height: 85px;
+    margin-top: 10%;
+    margin-left: 45%;
+}
+.btns{
+    width: 20%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    /*background: rgb(97, 238, 92);*/
+    background-color: blueviolet;
+    color: white;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+.btns:hover{
+    color: white;
+    background-color: black;
+}
+.logout{
+    margin-top: 10px;
+    margin-left: 75%;
+}
+.logotbtn{
+    width: 20%;
+    padding: 10px;
+    cursor: pointer;
+    margin: auto;
+    border-radius: 10px;
+    outline: none;
+    border: 0;
+    color: white;
+    background: blueviolet;
+    
+}
+.logotbtn:hover{
+    color: white;
+    background-color: black;
+}

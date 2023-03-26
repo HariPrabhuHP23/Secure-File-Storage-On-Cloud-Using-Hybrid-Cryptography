@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryption</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/css/multi-select-tag.css">
+    <link rel="stylesheet" type="text/css"  href="{{ url_for( 'static',filename='encrypt.css') }}"/>
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1> File </h1>
+            <h1 id="safe">Upload</h1><br>
+            </div>
+        
+        <div class="file-upload">
+            <form>
+                <label> Select the receiver</label>
+                <select  id='dropdown' class="selectionbox" multiple>
+                    <option value="option1">harikrish0122001@gmail.com</option>
+                    <option value="option2">hariprabhu2323@gmail.com</option>
+                    <option value="option3">harishrethinam@gmail.com</option>
+                    <option value="option4">harikrish0122001@gmail.com</option>
+                    <option value="option5">hariprabhu2323@gmail.com</option>
+                    <option value="option6">harishrethinam@gmail.com</option>
+                    <option value="option7">harikrish0122001@gmail.com</option>
+                    <option value="option8">hariprabhu2323@gmail.com</option>
+                    <option value="option9">harishrethinam@gmail.com</option>
+                  </select><br><br>
+                  <input type="checkbox"><span>Select all</span>
+                  <h5>Hold Control to select multiple users</select></h5><br><br>
+
+                <label for="file-upload" name="file-">Select a file to upload:</label>
+                <input type="file" id="file-upload" name="file--upload" multiple><br><br>
+                <label for="file-upload">Select an Image to Hide </label>
+                <input type="file" id="img-upload" name="img--upload"><br><br>
+                <label >Enter the Key</label>
+                <input type="text" id="key-holder" placeholder="Enter the Key"><br><br>
+                <button type="submit" class="upload">Upload</button>
+
+              </form>
+            <form method="post" action="/back2choice">
+                <button type="submit" class="upload" id="main"> Back to Choice</button>
+                </form>
+              
+        </div>
+
+    </div>
+   <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/js/multi-select-tag.js"></script>
+    <script>
+
+    ///AJAX
+        var xhr = new XMLHttpRequest();
+
+        function sendAjaxRequest(data,route) {
+        xhr.open('POST', route);
+        xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+        xhr.onload = function() {
+        if (xhr.status === 200) {
+         console.log(xhr.responseText); // Handle the response from Flask
+         }
+       };
+      xhr.send(JSON.stringify(data));
+       }
+
+
+
+
+
+
+
+    //// file upload
+                const fileInput = document.getElementById('file-upload');
+                fileInput.addEventListener('change', () => {
+                const fileName = fileInput.files[0].name;
+                console.log(fileName);
+                sendAjaxRequest(fileName,'/file_encrypt');
+                });
+
+
+
+    ////image upload
+                const imgfileInput = document.getElementById('img-upload');
+                imgfileInput.addEventListener('change', () => {
+                const imgfileName = imgfileInput.files[0].name;
+                console.log(imgfileName);
+                sendAjaxRequest(imgfileName, '/imagedata');
+
+                });
+
+
+
+
+        /*new MultiSelectTag('dropdown')  // id*/
+        var list=[]
+        const select = document.querySelector('select')
+            select.onchange = (e) => {
+            var selectedVals = [...e.target.selectedOptions].map(o => o.text)
+            list.push(selectedVals);
+
+            var selected=list[list.length -1]
+            console.log(selected);
+            sendAjaxRequest(selected, '/receiverdata');
+
+
+
+        }
+
+    </script>
+
+</body>
+</html>
