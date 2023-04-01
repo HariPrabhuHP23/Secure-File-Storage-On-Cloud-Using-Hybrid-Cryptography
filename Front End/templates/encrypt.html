@@ -16,9 +16,9 @@
             </div>
         
         <div class="file-upload">
-            <form>
+            <form >
                 <label for="receiver"> Select the receiver</label>
-                <select>
+                <select id="dropdown">
                     <option value="option1">harikrish0122001@gmail.com</option>
                     <option value="option2">hariprabhu2323@gmail.com</option>
                     <option value="option3">harishrethinam@gmail.com</option>
@@ -29,7 +29,7 @@
                 <input type="file" id="file-upload" name="file-upload"><br><br>
                 <label for="key">Enter the Key</label>
                 <input type="text" id="key-holder" placeholder="Enter the Key"><br><br>
-                <button type="submit" class="upload">Upload</button><br>
+                <button type="submit" class="upload" id="upload">Upload</button><br>
                 <button class="upload" id="main"> Back to Choice</button>
               </form>
               
@@ -37,6 +37,14 @@
 
     </div>
     <script>
+        
+        document.getElementById('upload').addEventListener('click',function(event)
+        {
+            console.log("HII HELLO");
+            var selectInput = document.getElementById('dropdown').value;
+                console.log(selectInput)
+            
+        })
         document.getElementById('main').addEventListener('click',function (main) {
             main.preventDefault();
             window.location.href="choice.html";

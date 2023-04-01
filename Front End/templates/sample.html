@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Submit Form Data</title>
+</head>
+<body>
+  <form>
+    <label for="select-input">Select Option:</label>
+    <select name="select-input" id="select-input">
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+    </select>
+    <br><br>
+    <label for="file-input">Select File:</label>
+    <input type="file" id="file-input" name="file-input">
+    <br><br>
+    <input type="submit" value="Submit" onclick="submitForm()">
+  </form>
+  <script>
+    var formDataList = [];
+    function submitForm() {
+      var selectInput = document.getElementById('select-input').value;
+      var fileInput = document.getElementById('file-input').files[0];
+      var fileName = fileInput.name;
+      var formData = {
+        selectInput: selectInput,
+        fileName: fileName
+      };
+      formDataList.push(formData);
+      console.log(formDataList);
+    }
+  </script>
+</body>
+</html>
+

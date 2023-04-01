@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decryption</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/css/multi-select-tag.css">
     <link rel="stylesheet" type="text/css"  href="{{ url_for( 'static',filename='decrypt.css') }}"/>
+    <script type="text/javascript" src="/static/decrypt.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -16,13 +16,13 @@
             <h1 id="safe">Download</h1><br>
         </div>
         <div class="file-download">
-            <form class="file-download">
-                <label for="received-file"> Select the file</label>
-                <select id="dropdown">
-                    <option value="">--select an option----</option>
+            <form class="file-download" action="\decrypt_json" method='POST' enctype="multipart/form-data">
+                <label> Select the file</label>
+                <select id="dropdown" name="dropdown_receiver">
+                    <option value="">select an option</option>
                 </select><br><br>
                 <label for="file-upload">Select an Image to Hide </label>
-                <input type="file" id="file-upload" name="file-upload"><br><br>
+                <input type="file" id="img-upload" name="file-upload" accept="image/*"><br><br>
                 <button type="submit" class="download">Download</button>
             </form>
              <form class="file-download" action="/back2choice" method="POST">
@@ -30,42 +30,12 @@
                 </form>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/js/multi-select-tag.js">
 
-    </script>
-    <script>
-    var options=[
-    {value:'option1', text:'hari.pdf'},
-    {value:'option2',text:'krish.img'},
-    {value:'option3',text:'pdf.jpg'},
-    {value:'option4',text:'pdf5.jpg'}]
-
-
-    var select=document.getElementById("dropdown");
-    for(var i=0;i<options.length;i++)
-    {
-       var opt=document.createElement("option");
-       opt.value=options[i].value;
-       opt.text=options[i].text;
-       select.appendChild(opt);
-    }
-
-
-     /*var img=document.getElementById('file-upload');*/
-
-    var dropdown=document.getElementById("dropdown");
+    <!--var dropdown=document.getElementById("dropdown");
     dropdown.addEventListener('change',function() {
     var selected=dropdown.options[dropdown.selectedIndex].text;
     console.log(selected);
-     /*new MultiSelectTag('dropdown')  // id*/
-
-
-
-    $.ajax({
-    type:'POST',url:'/filedata',data:{file:selected}});
-
-
-    </script>
+    });-->
 
 
 </body>

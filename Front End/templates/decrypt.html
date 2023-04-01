@@ -39,18 +39,19 @@
                 console.log(fileName);
                 });
 
+                var selectInput = document.getElementById('dropdown').value;
+                console.log(selectInput)
 
 
 
                 var list=[]
                
-                console.log(filename)
                var select = document.querySelector('select')
             select.onchange = (e) => {
             var selectedVals = [...e.target.selectedOptions].map(o => o.text);
             list.push(selectedVals);
             console.log(list[list.length -1]);
-        }   
+        }
         
         
         /*new MultiSelectTag('dropdown')  // id*/
