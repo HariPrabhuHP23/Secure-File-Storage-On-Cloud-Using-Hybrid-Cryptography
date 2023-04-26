@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="signin" class="input-group">
+        <pre> Create New Account</pre>
+        <input type="text" class="input-field" placeholder="UserName"  id="username" name="username" required>
+        <input type="text" class="input-field" placeholder="Name" id="name" name="name" required>
+        <input type="email" class="input-field" placeholder="Email ID" id="mail" name="mailid" required>
+        <input type="password" class="input-field" placeholder=" New Password" id="newpass" name="newpass" required>
+        <input type="password" class="input-field" placeholder=" Re Enter Password"  id="repass" name="repass" required>
+        <button type="submit" class="submit-btn" onclick="form_()">Create Account</button>
+    </form>
+<script>
+    function form_()
+   {
+    debugger;
+    var username=document.getElementById('username').value;
+    var name=document.getElementById('name').value;
+    var mail=document.getElementById('mail').value;
+    var newpass=document.getElementById('newpass').value;
+    var repass=document.getElementById('repass').value;
+    console.log(username,name,mail,newpass,repass);
+    var data ={"m":mail,"name":name,"pass":newpass}
+    console.log(data)
+}
+</script>
+    
+</body>
+</html>

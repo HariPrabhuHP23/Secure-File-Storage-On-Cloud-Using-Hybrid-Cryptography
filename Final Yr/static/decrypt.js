@@ -5,7 +5,7 @@ $.ajax({
     url: "/decrypt_json",
     dataType: "json",
     success: function(data) {
-        var options=data['files'];
+        var options=data;
        var select = $('#dropdown');
         for(var i=0;i<options.length;i++)
          {

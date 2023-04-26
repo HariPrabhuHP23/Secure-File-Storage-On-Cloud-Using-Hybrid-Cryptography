@@ -1,9 +1,11 @@
-import Encryption as enc
+
 from Cryptodome.Cipher import AES, DES
 import base64
 from stegano import lsb
 from stegano.lsb import generators
-
+key = "key"
+aes_key = 'abcdefghijklmnop' #  16-byte key
+des_key = 'abcdefgh' #  8-byte key
 
 def decrypt_des(encrypted_message, key):
     encrypted_message = base64.b64decode(encrypted_message.encode('utf-8'))
@@ -13,6 +15,8 @@ def decrypt_des(encrypted_message, key):
     # remove the padding
     secret_message = secret_message.decode('utf-8').rstrip("{")
     return secret_message
+
+
 
 
 def decrypt_aes(encrypted_message, key):
@@ -43,9 +47,17 @@ def rc4(data, key):
     return ''.join(result)
 
 
-decrypted_data = rc4(enc.steganographed_msg, enc.key)
-#decrypted_des = decrypt_des(enc.steganographed_msg, enc.des_key)
-decrypted_des = decrypt_des(enc.encrypted_des, enc.des_key)
-decrypted_aes = decrypt_aes(decrypted_des, enc.aes_key)
+def main():
+    steganographed_msg=lsb.reveal("steganographed_Decrypted File.png",generators.eratosthenes())
+    print('stegno--',steganographed_msg)
 
-print('final Value----',decrypted_aes)
+    decrypted_data = rc4(steganographed_msg, key)
+    print('level 1 ',decrypted_data)
+    #decrypted_des = decrypt_des(enc.steganographed_msg, enc.des_key)
+    decrypted_des = decrypt_des(decrypted_data, des_key)
+    print('level 2',decrypted_des)
+    decrypted_aes = decrypt_aes(decrypted_des, aes_key)
+
+    print('final Value----',decrypted_aes)
+
+main()

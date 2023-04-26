@@ -18,11 +18,11 @@
         <div class="file-download">
             <form class="file-download" action="\decrypt_json" method='POST' enctype="multipart/form-data">
                 <label> Select the file</label>
-                <select id="dropdown" name="dropdown_receiver">
+                <select id="dropdown" name="dropdown_receiver" required>
                     <option value="">select an option</option>
                 </select><br><br>
-                <label for="file-upload">Select an Image to Hide </label>
-                <input type="file" id="img-upload" name="file-upload" accept="image/*"><br><br>
+                <label >Select an Image to Hide </label>
+                <input type="file" id="img-upload" name="image-upload" accept="image/*"><br><br>
                 <button type="submit" class="download">Download</button>
             </form>
              <form class="file-download" action="/back2choice" method="POST">

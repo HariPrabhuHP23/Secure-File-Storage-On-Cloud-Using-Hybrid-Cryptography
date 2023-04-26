@@ -2,6 +2,13 @@ from stegano import lsb
 from stegano.lsb import generators
 from Cryptodome.Cipher import AES, DES
 import base64
+
+
+#data =input("Enter the key:-")
+key = "key"
+aes_key = 'abcdefghijklmnop' #  16-byte key
+des_key = 'abcdefgh' #  8-byte key
+
 def rc4(data, key):
     S = list(range(256))
     j = 0
@@ -42,19 +49,16 @@ def encrypt_des(secret_message, key):
     return base64.b64encode(encrypted_message).decode('utf-8')
 
 
-data =input("Enter the key:-")
-key = "key"
-aes_key = 'abcdefghijklmnop' #  16-byte key
-des_key = 'abcdefgh' #  8-byte key
 
-encrypted_aes = encrypt_aes(data, aes_key)
-encrypted_des = encrypt_des(encrypted_aes, des_key)
-encrypted_data = rc4(encrypted_des, key)
-print("RC4",encrypted_data)
-#print("Encrypt KEY ---",encrypted_des)
-###Steganography
+def main():
+    encrypted_aes = encrypt_aes(data, aes_key)
+    encrypted_des = encrypt_des(encrypted_aes, des_key)
+    encrypted_data = rc4(encrypted_des, key)
+    print("RC4",encrypted_data)
+    #print("Encrypt KEY ---",encrypted_des)
+    ###Steganography
 
-hide=lsb.hide('pexels-alex-urezkov-10024233.png',encrypted_data,generators.eratosthenes())
-hide.save("Hidden.png")
-steganographed_msg=lsb.reveal("Hidden.png",generators.eratosthenes())
-print('stegno--',steganographed_msg)
+    hide=lsb.hide('pexels-alex-urezkov-10024233.png',encrypted_data,generators.eratosthenes())
+    hide.save("Hidden.png")
+    steganographed_msg=lsb.reveal("Hidden.png",generators.eratosthenes())
+    print('stegno--',steganographed_msg)

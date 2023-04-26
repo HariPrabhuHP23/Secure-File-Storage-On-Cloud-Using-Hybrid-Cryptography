@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login and Registration Form</title>
     <link rel="stylesheet" type="text/css"  href="{{ url_for( 'static',filename='style.css') }}"/>
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     
 
 </head>
@@ -26,7 +27,7 @@
             </div> 
             <form  id='login' class="input-group" action="/login_form" method="post">
                 <pre> Login </pre>
-                <input type="text" class="input-field" placeholder="User Name" name="username" required>
+                <input type="email" class="input-field" placeholder="Mail Id " name="mailid" required>
                 <input type="password" class="input-field" placeholder="Password" name="password" required><br><br><br>
                 <button type="submit" class="submit-btn" id="login-btn">Login</button>
                 <form  id="login1" class="newuser1">
@@ -35,19 +36,20 @@
             </form>
 
 
-            <form id="signin" class="input-group" action="/sign_form" method="post">
+            <form id="signin" class="input-group"><!--action="/sign_form" method="post">-->
                 <pre> Create New Account</pre>
-                <input type="text" class="input-field" placeholder="UserName" name="username" required>
-                <input type="text" class="input-field" placeholder="Name" name="name" required>
-                <input type="email" class="input-field" placeholder="Email ID" name="mailid" required>
-                <input type="password" class="input-field" placeholder=" New Password" name="newpass" required>
-                <input type="password" class="input-field" placeholder=" Re Enter Password" name="repass" required>
-                <button type="submit" class="submit-btn" >Create Account</button>
+                <input type="text" class="input-field" placeholder="UserName"  id="username" name="username" required>
+                <input type="text" class="input-field" placeholder="Name" id="name" name="name" required>
+                <input type="email" class="input-field" placeholder="Email ID" id="mail" name="mailid" required>
+                <input type="password" class="input-field" placeholder=" New Password" id="newpass" name="newpass" required>
+                <input type="password" class="input-field" placeholder=" Re Enter Password"  id="repass" name="repass" required>
+                <button type="button" class="submit-btn" onclick="form_()">Create Account</button>
                 <!---<button type="submit" class="submit-btn" Onclick="login()">Create Account</button> -->
             </form>
         </div>
     </div>
 <script>
+
     var x=document.getElementById("login");
     var y=document.getElementById("signin");
     var z=document.getElementById("btn");
@@ -63,7 +65,35 @@
             z.style.left='0px';
 
         }
+   function form_()
+   {
+    debugger;
+    var username=document.getElementById('username').value;
+    var name=document.getElementById('name').value;
+    var mail=document.getElementById('mail').value;
+    var newpass=document.getElementById('newpass').value;
+    var repass=document.getElementById('repass').value;
+    if (newpass!=repass)
+      {
+        alert("Password Doesn't match")
+      }
+   
+       var info={'Mail_id':mail,'Name':name,'Password':newpass}
+       
+       $.ajax(
+       {
+       type: "POST",
+       url: "/sign_form",
+       data:JSON.stringify(info),
+       dataType:'json',
+       contentType:'application/json; charset=utf-8'
+       })
 
+       
+
+
+    
+}
 </script>
 </body>
 </html>

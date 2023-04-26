@@ -1,7 +1,7 @@
 
-////Displaying Users////
+////Displaying Users Mail////
 
-$.ajax({url:"/encrypt_users",
+$.ajax({url:"/upload1",
        type:"GET",
        dataType:"json",
        success:function(data)
@@ -18,7 +18,6 @@ $.ajax({url:"/encrypt_users",
 ///checking image format
 function checkimg()
 {
-debugger;
 var image=document.getElementById('img-upload');
 var filename=image.value;
 var extensions=['.jpg','jpeg','.png','.bmp', '.webp','.svg','.ico','.tiff','.tif']
@@ -42,21 +41,59 @@ image.value='';
 }
 }
 
-
+/*
 ///Getting selected options
 function selectedopt() {
+  var image=document.getElementById('img-upload')
+  var file=document.getElementById('file-upload')
+  var fname=file.files[0];
+  var imgname=image.files[0];
+  var key=document.getElementById('key').value
   var selectElement = document.getElementById("dropdown");
   var selectedOptions = selectElement.selectedOptions;
   var selectedValues = [];
   for (let i = 0; i < selectedOptions.length; i++) {
     selectedValues.push(selectedOptions[i].value);
   }
+  console.log(imgname['name'])
+  console.log(fname['name'])
+  var info={'image':imgname['name'],'options':selectedValues,'file':fname['name'],'key':key}
+
   debugger;
   $.ajax({
       type: "POST",
      url: "/upload1",
-     data: { file: selectedValues},
-     })
+     data: JSON.stringify(info),
+     dataType:'json',
+     contentType:'application/json; charset=utf-8',
+
+});
+
 }
+*/
+
+///////////
+function selectedopt() {
+debugger;
+var selectElement = document.getElementById("dropdown");
+  var selectedOptions = selectElement.selectedOptions;
+  var selectedValues = [];
+  for (let i = 0; i < selectedOptions.length; i++) {
+    selectedValues.push(selectedOptions[i].value);
+  }
+
+
+$.ajax({
+  url: '/upload1',
+  type: 'POST',
+  data: {file: selectedValues}/*JSON.stringify(selectedValues),
+  dataType:'json',
+
+  contentType: 'application/json; charset=utf-8',*/
+
+
+});
+}
+
 
 
