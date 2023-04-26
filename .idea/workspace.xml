@@ -1,69 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fdcea295-c40b-490c-806e-d026619738c5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Final Yr/Download/images/1681744054703.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final Yr/Download/images/643d62559774f_download.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final Yr/Download/images/643d627f1c165_download.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final Yr/Download/images/Checking.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final Yr/Download/images/s1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final Yr/Download/images/steganographed_2-72.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final Yr/Download/images/steganographed_Checking (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final Yr/Download/images/steganographed_Checking (2).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final Yr/Download/images/steganographed_Checking.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final Yr/Download/images/steganographed_Decrypted File.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final Yr/Download/images/steganographed_Flow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final Yr/Download/images/steganographed_Project expo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final Yr/Download/images/steganographed_RC4 (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final Yr/Download/images/steganographed_RC4 (2).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final Yr/Download/images/steganographed_RC4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final Yr/Mail.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final Yr/Main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final Yr/dec.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final Yr/enc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final Yr/templates/sample.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final Yr/uploads/files/643d627f1c165_download.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final Yr/uploads/files/8810353377428842023-04-17_09_13_04.134_signed.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final Yr/uploads/files/881035337742884_signed.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final Yr/uploads/files/Checking.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final Yr/uploads/files/Hari Resume (3).pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final Yr/uploads/files/Hari_Krishnan_A.L.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final Yr/uploads/files/Hari_Krishnan_A_L_.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final Yr/uploads/files/ICTAcademy PRAI10EN Certificate _ ICT Academy.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final Yr/uploads/files/Progress Report Form - Review 2.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final Yr/uploads/files/Project 2 review.pptx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final Yr/uploads/files/SIG.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final Yr/uploads/files/Use case (1).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final Yr/uploads/files/pan Card.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final Yr/uploads/images/2-72.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final Yr/uploads/images/RC4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final Yr/uploads/images/steganographed_img/steganographed_2-72.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final Yr/uploads/images/steganographed_img/steganographed_RC4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Yr/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Final Yr/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Yr/.idea/Final Yr.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Yr/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Final Yr/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Yr/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Final Yr/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Yr/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Final Yr/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Yr/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Final Yr/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Yr/Download/ieee_conference_paper_template (1).doc" beforeDir="false" afterPath="$PROJECT_DIR$/Final Yr/Download/ieee_conference_paper_template (1).doc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Yr/Download/images/Project expo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Final Yr/Download/images/Project expo.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Yr/Download/images/Secure File Storage.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Final Yr/Download/images/Secure File Storage.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Yr/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Yr/static/banner.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Final Yr/static/banner.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Yr/static/choice.css" beforeDir="false" afterPath="$PROJECT_DIR$/Final Yr/static/choice.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Yr/static/decrypt.js" beforeDir="false" afterPath="$PROJECT_DIR$/Final Yr/static/decrypt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Yr/static/encrypt.js" beforeDir="false" afterPath="$PROJECT_DIR$/Final Yr/static/encrypt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Yr/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Final Yr/static/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Yr/templates/decrypt.html" beforeDir="false" afterPath="$PROJECT_DIR$/Final Yr/templates/decrypt.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Yr/templates/encrypt.html" beforeDir="false" afterPath="$PROJECT_DIR$/Final Yr/templates/encrypt.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Yr/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/Final Yr/templates/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Yr/uploads/files/Harish_R resume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Final Yr/uploads/files/Harish_R resume.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Yr/uploads/images/wp6577929.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Yr/user.json" beforeDir="false" afterPath="$PROJECT_DIR$/Final Yr/user.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Secure storage/Decryption.py" beforeDir="false" afterPath="$PROJECT_DIR$/Secure storage/Decryption.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Secure storage/Encryption.py" beforeDir="false" afterPath="$PROJECT_DIR$/Secure storage/Encryption.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Secure storage/Hidden.png" beforeDir="false" afterPath="$PROJECT_DIR$/Secure storage/Hidden.png" afterDir="false" />
-    </list>
+    <list default="true" id="fdcea295-c40b-490c-806e-d026619738c5" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,11 +37,12 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Final Yr/static" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\harik\Secure-File-Storage-On-Cloud-Using-Hybrid-Cryptography\Final Yr\static" />
       <recent name="C:\Users\harik\Secure-File-Storage-On-Cloud-Using-Hybrid-Cryptography\Final Yr" />
     </key>
   </component>
