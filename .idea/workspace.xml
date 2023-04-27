@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fdcea295-c40b-490c-806e-d026619738c5" name="Changes" comment="" />
+    <list default="true" id="fdcea295-c40b-490c-806e-d026619738c5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Final Yr/uploads/files/Hari_Krishnan_A.L.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Final Yr/uploads/files/IEEE PAPER 1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Final Yr/uploads/images/HARIKRISHNAN AL.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Final Yr/uploads/images/steganographed_img/steganographed_HARIKRISHNAN AL.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final Yr/Download/files/enc.py" beforeDir="false" afterPath="$PROJECT_DIR$/Final Yr/Download/files/enc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final Yr/Mail.py" beforeDir="false" afterPath="$PROJECT_DIR$/Final Yr/Mail.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final Yr/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Final Yr/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final Yr/static/decrypt.css" beforeDir="false" afterPath="$PROJECT_DIR$/Final Yr/static/decrypt.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final Yr/templates/decrypt.html" beforeDir="false" afterPath="$PROJECT_DIR$/Final Yr/templates/decrypt.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,11 +48,12 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Final Yr/static" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Final Yr/Download/files" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\harik\Secure-File-Storage-On-Cloud-Using-Hybrid-Cryptography\Final Yr\Download\files" />
       <recent name="C:\Users\harik\Secure-File-Storage-On-Cloud-Using-Hybrid-Cryptography\Final Yr\static" />
       <recent name="C:\Users\harik\Secure-File-Storage-On-Cloud-Using-Hybrid-Cryptography\Final Yr" />
     </key>

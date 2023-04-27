@@ -14,8 +14,8 @@ def mail(img,options):
 
 
 
-    sender="harikrish0122001@gmail.com"
-    send_password="mzlmjavsfuwoxrju"
+    sender="0101@gmail.com"
+    send_password="dummy"
 
     #eamil_rec="harikrish0122001@gmail.com"
     eamil_rec=options

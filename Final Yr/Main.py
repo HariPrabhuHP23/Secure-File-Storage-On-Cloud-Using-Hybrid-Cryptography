@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, jsonify, send_file
+from flask import Flask, request, render_template, jsonify
 
 import os
 import enc
@@ -159,7 +159,7 @@ def upload1():
             #return data
         text = "success"
 
-        return text
+        return "<h1> Mail Sent Successfully </h1>"
 
 
 if __name__ == '__main__':

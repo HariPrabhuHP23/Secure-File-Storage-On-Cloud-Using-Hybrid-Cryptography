@@ -1,8 +1,6 @@
 from Cryptodome.Cipher import DES,AES
 import base64
-from stegano import lsb
-from stegano.lsb import generators
-import os
+
 
 rc4_key = 'secret_key'
 des_key = 'abcdefgh'

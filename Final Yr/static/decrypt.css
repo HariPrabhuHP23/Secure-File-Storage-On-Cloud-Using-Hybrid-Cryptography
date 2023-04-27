@@ -25,7 +25,7 @@
 }
 form{
     width: 350px ;
-    height: 400px;
+    height: 180px;
     position: relative;
     margin: 6% auto;
     color: black;
@@ -68,8 +68,28 @@ input[type="file"] {
     border: 0;
     outline: none;
     border-radius: 30px;
+
+    margin-top:10px;
 }
 .download:hover{
+    background-color: black;
+    color: white;
+}
+.download1{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: blueviolet;
+    color:white;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    margin-top:1px;
+
+}
+.download1:hover{
     background-color: black;
     color: white;
 }
