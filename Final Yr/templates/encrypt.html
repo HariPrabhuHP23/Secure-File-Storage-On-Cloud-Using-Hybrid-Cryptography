@@ -7,9 +7,7 @@
     <title>Encryption</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="/static/encrypt.js" defer></script>
-
     <link rel="stylesheet" type="text/css"  href="{{ url_for( 'static',filename='encrypt.css') }}"/>
-
 </head>
 <body>
     <div class="container">
@@ -17,16 +15,11 @@
             <h1> File </h1>
             <h1 id="safe">Upload</h1><br>
             </div>
-
     </div>
     <div>
         <form   action="/upload1" method="POST" enctype="multipart/form-data">
-
                <label> Select the receiver</label>
-
                 <select multiple id='dropdown' size="3" name="options">
-
-
                   </select><br><br>
                   <h5>Hold Control to select multiple users</h5><br><br>
                 <label for="file-upload" >Select a file to upload:</label>
@@ -36,8 +29,6 @@
                 <label >Enter the Key</label>
                 <input type="text" id="key" name='key' placeholder="Enter the Key"><br><br>
                 <button type="submit" class="upload" >Upload</button>
-
-
             </form>
     </div>
 </body>

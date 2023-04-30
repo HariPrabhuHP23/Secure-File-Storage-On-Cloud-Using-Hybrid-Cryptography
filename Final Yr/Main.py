@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, jsonify
+from flask import Flask, request, render_template, jsonify,send_file
 
 import os
 import enc
@@ -75,14 +75,14 @@ def sign():
 @app.route('/decrypt_json', methods=['POST', 'GET'])
 def receiverroute():
     if request.method == 'GET':
-        files = [{'name':'hk.pdf','id':1},{'name':"Harish.pdf",'id':2},{'name':"Prabhu.pdf",'id':3}]###need files with name and id
+        files = [{'name':'hk.pdf','id':1},{'name':"Harish.pdf",'id':2},{'name':"enc.py",'id':3}]###need files with name and id
         receivers=[]
         for i in files:
             receivers.append(i['name'])
         return jsonify(receivers)
     else:
         print("function ula vantan")
-        files = [{'name': 'hk.pdf', 'id': 1}, {'name': "Harish.pdf", 'id': 2}, {'name': "Prabhu.pdf", 'id': 3}]### need function call
+        files = [{'name': 'hk.pdf', 'id': 1}, {'name': "Harish.pdf", 'id': 2}, {'name': "enc.py", 'id': 3}]### need function call
         image = request.files['image-upload']
         file_recv = request.form['dropdown_receiver']
 
@@ -103,9 +103,10 @@ def receiverroute():
                 print(data)
                 #return data you can get the json file here
 
+        filepath=os.path.join(basepath,'Download','files',file_recv)
+        print(filepath)
 
-
-        return '<h1> File Downloading ........ </h1>'
+        return send_file(filepath,as_attachment=True)
 
 
 @app.route('/upload1', methods=['GET'])

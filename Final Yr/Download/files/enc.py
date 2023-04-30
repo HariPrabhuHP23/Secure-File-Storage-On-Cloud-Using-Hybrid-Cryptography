@@ -53,10 +53,7 @@ def main(key):
     encrypted_rc4 = rc4(encrypted_des, rc4_key)
 
 
-    #basepath = os.path.dirname(__file__)
-    #hide = lsb.hide('Checking.png',encrypted_rc4, generators.eratosthenes())
-    #imagepath1 = os.path.join(basepath, 'steganographed_' + "Checking.png")
-    #hide.save(imagepath1)
+
 
     return encrypted_rc4
 

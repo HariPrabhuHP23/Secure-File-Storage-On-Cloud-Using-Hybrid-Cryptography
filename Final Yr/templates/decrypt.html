@@ -16,7 +16,9 @@
             <h1 id="safe">Download</h1><br>
         </div>
         <div class="file-download">
-            <form class="file-download" action="\decrypt_json" method='POST' enctype="multipart/form-data">
+            <!--<form class="file-download" action="\decrypt_json" method='POST' enctype="multipart/form-data">-->
+            <form class="file-download" action="{{url_for('receiverroute') }}" method='POST' enctype="multipart/form-data">
+
                 <label> Select the file</label>
                 <select id="dropdown" name="dropdown_receiver" required>
                     <option value="">select an option</option>
